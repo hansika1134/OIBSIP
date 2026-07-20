@@ -1,0 +1,134 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #2c2a26;
+  background: #fdfbf6;
+  line-height: 1.7;
+}
+
+h1, h2, .quote-section blockquote {
+  font-family: 'Playfair Display', serif;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  background: #2b2440;
+  color: #f4f1ea;
+  padding: 60px 8%;
+}
+
+.hero-img {
+  width: 220px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  flex-shrink: 0;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.tagline {
+  font-size: 1.15rem;
+  max-width: 480px;
+  color: #cfc7e8;
+}
+
+section {
+  padding: 60px 8%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.bio {
+  background: #fdfbf6;
+}
+
+.bio h2, .timeline-section h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: #3a3358;
+}
+
+.bio p {
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+}
+
+.timeline-section {
+  background: #efe9dd;
+  max-width: 100%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.timeline {
+  display: grid;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.milestone {
+  background: #fff;
+  border-left: 4px solid #b08d57;
+  padding: 18px 24px;
+  border-radius: 6px;
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+}
+
+.year {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #b08d57;
+  flex-shrink: 0;
+  width: 70px;
+}
+
+.quote-section {
+  text-align: center;
+  background: #2b2440;
+  color: #f4f1ea;
+  max-width: 100%;
+}
+
+.quote-section blockquote {
+  font-size: 1.6rem;
+  font-style: italic;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.quote-section cite {
+  display: block;
+  margin-top: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-size: 0.95rem;
+  color: #cfc7e8;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 0.85rem;
+  color: #8a8578;
+}
+
+@media (max-width: 600px) {
+  .hero { flex-direction: column; text-align: center; padding: 40px 6%; }
+  .hero-text h1 { font-size: 2.2rem; }
+  .milestone { flex-direction: column; gap: 6px; }
+  .year { width: auto; }
+}

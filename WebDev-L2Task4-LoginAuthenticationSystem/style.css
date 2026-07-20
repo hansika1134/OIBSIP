@@ -1,0 +1,78 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef1fb;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+.auth-card {
+  background: #fff;
+  width: 380px;
+  padding: 36px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(30,40,80,0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #2f3a56;
+  font-size: 1.6rem;
+}
+
+label {
+  display: block;
+  margin: 14px 0 6px;
+  font-size: 0.9rem;
+  color: #4a516b;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d3d8e6;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.hint {
+  color: #9aa1b5;
+  font-size: 0.78rem;
+}
+
+button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #4361ee;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover { background: #3350d8; }
+
+.error-msg {
+  color: #d8433d;
+  font-size: 0.85rem;
+  margin-top: 12px;
+  min-height: 18px;
+}
+
+.switch-link {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 0.9rem;
+  color: #4a516b;
+}
+
+.switch-link a { color: #4361ee; text-decoration: none; font-weight: 600; }
+
+.dashboard-card { text-align: left; }
+.welcome-msg { font-weight: 600; color: #2f3a56; margin-bottom: 10px; }
